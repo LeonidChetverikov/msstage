@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: arc-k8s-demo
-  namespace: msstage
+  namespace: msstage-app
 spec:
   replicas: 1
   selector:
@@ -41,7 +41,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: arc-k8s-demo
-  namespace: msstage
+  namespace: msstage-app
   labels:
     name: arc-k8s-demo
 spec:
