@@ -23,7 +23,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: arc-k8s-demo
-        image: arck8sconformance.azurecr.io/samples/demo:v0.1.0
+        image: msstage2022.azurecr.io/samples/msstage-demo:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
@@ -32,8 +32,8 @@ spec:
             memory: "50Mi"
             cpu: "125m"
           limits:
-            memory: "256Mi"
-            cpu: "500m"
+            memory: "128Mi"
+            cpu: "250m"
 
 ---
 

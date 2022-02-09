@@ -10,7 +10,7 @@ func main() {
 	// The "HandleFunc" method accepts a path and a function as arguments
 	http.HandleFunc("/", handler)
 
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServe(":8080", nil)
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
