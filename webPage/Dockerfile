@@ -1,7 +1,7 @@
 FROM golang:1.16-alpine
 
 
-COPY *.go ./
+COPY webPage/*.go ./
 
 RUN go build -o /msstage
 
