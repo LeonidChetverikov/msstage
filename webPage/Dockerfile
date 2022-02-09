@@ -1,5 +1,7 @@
 FROM golang:1.16-alpine
 
+WORKDIR /app
+
 COPY webPage/go.mod ./
 RUN go mod download
 
