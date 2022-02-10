@@ -23,7 +23,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: arc-k8s-demo
-        image: msstage2022.azurecr.io/samples/msstage-demo:latest
+        image: msstage2022.azurecr.io/sample/msstage-demo:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
